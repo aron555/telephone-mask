@@ -64,6 +64,9 @@ window.addEventListener('DOMContentLoaded', function () {
     }
 
 
-    let a = document.getElementsByClassName('telephone'), b = [];
-    for (let c = 0; c < a.length; c++) b.push(new PhoneField(a[c], a[c].dataset.phonemask, a[c].dataset.placeholder))
+    let a = document.getElementsByClassName('telephone'),
+        b = [{}];
+    for (let c = 0; c < a.length; c++) {
+        b.push(new PhoneField(a[c], a[c].dataset.phonemask, a[c].dataset.placeholder));
+    }
   });
